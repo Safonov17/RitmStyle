@@ -4,3 +4,39 @@ $black: #000000
 
 $radius: 10px
 $transitions: all .30s ease-in-out
+
+@mixin decoration-white
+  &::before
+    content: ''
+    width: 28px
+    height: 14px
+    background-color: $white
+    border-radius: 0px 50px
+    display: inline-block
+    margin-right: 66px
+  &::after
+    content: ''
+    width: 28px
+    height: 14px
+    background-color: $white
+    border-radius: 50px 0px
+    display: inline-block
+    margin-left: 66px
+
+@mixin decoration-accent
+  &::before
+    content: ''
+    width: 28px
+    height: 14px
+    background-color: $accent
+    border-radius: 0px 50px
+    display: inline-block
+    margin-right: 66px
+  &::after
+    content: ''
+    width: 28px
+    height: 14px
+    background-color: $accent
+    border-radius: 50px 0px
+    display: inline-block
+    margin-left: 66px
