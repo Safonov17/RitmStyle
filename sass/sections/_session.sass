@@ -1,0 +1,47 @@
+.session
+  padding-bottom: 150px
+  &__title
+    margin: 0 auto
+    &-text
+      margin: 0
+      margin-bottom: 100px
+  &__grid
+    display: grid
+    grid-gap: 24px
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(1, 1fr)
+  &__card
+    position: relative
+    background-image: url(../img/session-bg.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 416px
+    height: 258px
+    border-radius: $radius
+    overflow: hidden
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(1, 138, 190, 0.5), rgba(1, 138, 190, 0.5))
+      z-index: 1
+    &:first-child
+      width: 416px
+      height: 540px
+    &-title
+      position: absolute
+      left: 50px
+      bottom: 50px
+      width: 326px
+      font-family: "ElMessiri"
+      font-weight: 700
+      font-size: 24px
+      z-index: 2
+    &-box-1
+      grid-row: 1 / 3
